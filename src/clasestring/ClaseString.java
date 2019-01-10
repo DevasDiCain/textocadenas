@@ -55,8 +55,38 @@ public class ClaseString {
         System.out.println("Comparación entre aes e ies"+compareTo);
         
         //Conversión mayúsculas y minúsculas
-        System.out.println("S2 en mayusculas: "+s2.toUpperCase());
+        System.out.println("S2 en mayúsculas: "+s2.toUpperCase());
         System.out.println("S2 en minúsculas: "+s2.toLowerCase());
+        
+        //Tamaño de espacios
+        String espacios= " palabra palabra ";
+        System.out.println("Tamaño de espacios: "+espacios.length());
+        
+        String sinEspacios = espacios.trim();
+        System.out.println(espacios);
+        System.out.println(sinEspacios);
+        
+        //Remplazo de caracteres
+        System.out.println("String original : ".replace("Str", "P"));
+        
+        //Contenido
+        String aBuscar ="dealbo";
+        System.out.println("¿Contiene "+s2+ " la subcadena "+aBuscar+ "? "+s2.contains(aBuscar));
+        
+        //Obtener un array de char de una cadena
+        //Declaración de una variable array de tipo char
+        char[] arrayChar;
+        arrayChar = s2.toCharArray();
+        
+        //para recorrer un array:
+        //length como atributo existe en todos los arrays, equivale al método legnth()
+        //Para acceder a cada posición del array uso los corchetes
+        for(int i = 0; i<arrayChar.length;i++){
+            System.out.println("Posición i= "+i+" contenido = "+arrayChar[i]);
+        }
+        //Probar métodos endsWith, startsWith, isEmpty
+        
+        
     }
     
 }
