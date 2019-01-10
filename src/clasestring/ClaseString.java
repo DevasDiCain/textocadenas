@@ -29,10 +29,21 @@ public class ClaseString {
       String s1="ies";
       String s2="mardealboran.com";
       String nuevo=s1.concat(s2);
-        System.out.println("Nuevo: "+nuevo);
+        System.out.println("Nuevo : "+nuevo);
         System.out.println("Nuevo2: "+s1+s2);
       
+      //Devuelve el índice dentro de la cadena
+      //De la primera aparición de la cadena a buscar
       
+      int indice = nuevo.indexOf("alboran");
+        System.out.println(indice);
+      int index = nuevo.indexOf("ran",10);
+        System.out.println(index);
+        
+        //Métodos equals y equalsIgnoreCase
+        System.out.println("Igualdad Java y java"+"Java".equals("java"));
+        System.out.println("Igualdad Java y java"+"Java".equalsIgnoreCase("java"));
+        
     }
     
 }
